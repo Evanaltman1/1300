@@ -1,0 +1,473 @@
+/* Prompt: Generate CSS for a calm, professional psychology practice website for mobile screens only. Use a soft sage green and warm white color palette. Include styles for header, navigation, main, sections, footer, images, and links. Do not include any media queries or responsive design. Use flexbox only where needed. Style should be polished and professional with rounded corners, subtle shadows, and good spacing. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F5F1EB;
+  color: #3D3D3D;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+  background-color: #A8B8A8;
+  padding: 2em 1.5em;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #F5F1EB;
+  font-size: 1.8em;
+}
+
+header p {
+  color: #E8DFD8;
+  font-size: 0.95em;
+  margin-top: 0.5em;
+}
+
+#hamburger-btn {
+  background: none;
+  border: none;
+  color: #F5F1EB;
+  font-size: 1.8em;
+  cursor: pointer;
+  padding: 0.25em;
+  z-index: 1000;
+  position: relative;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #A8B8A8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.open ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.open a {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #B2C5A3;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  border-bottom: 1px solid #9BA89B;
+}
+
+nav a {
+  display: block;
+  padding: 1em 1.5em;
+  color: #F5F1EB;
+  text-decoration: none;
+}
+
+nav a.current-page {
+  background-color: #7A8A7A;
+  color: #F5F1EB;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  padding: 2em 1.5em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2.5em;
+  padding: 1.5em;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+
+section h2 {
+  color: #A8B8A8;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #B2C5A3;
+  padding-bottom: 0.75em;
+}
+
+section h3 {
+  color: #7A8A7A;
+  font-size: 1.1em;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+section p {
+  color: #4A4A4A;
+  margin-bottom: 1em;
+}
+
+.welcome {
+  background-color: #E8EDE9;
+  text-align: center;
+  padding: 2em 1.5em;
+}
+
+.intro {
+  background-color: #F5F1EB;
+  border-left: 4px solid #A8B8A8;
+  padding: 1.5em;
+}
+
+.why {
+  background-color: #E8EDE9;
+}
+
+.about-intro {
+  background-color: #F5F1EB;
+  border-left: 4px solid #A8B8A8;
+}
+
+.education {
+  background-color: #E8EDE9;
+}
+
+.experience {
+  background-color: #F5F1EB;
+  border-left: 4px solid #A8B8A8;
+}
+
+.office {
+  background-color: #E8EDE9;
+}
+
+.therapy {
+  background-color: #E8EDE9;
+}
+
+.testing {
+  background-color: #F5F1EB;
+  border-left: 4px solid #A8B8A8;
+}
+
+.faq {
+  background-color: #F5F1EB;
+}
+
+.faq article {
+  background-color: #FFFFFF;
+  border-left: 4px solid #A8B8A8;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+
+.faq img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.contact {
+  background-color: #E8EDE9;
+}
+
+.contact-details {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 1em 0;
+}
+
+.contact-details ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.contact-details li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #B2C5A3;
+}
+
+.testimonials {
+  background-color: #E8EDE9;
+}
+
+.testimonial {
+  background-color: #FFFFFF;
+  border-left: 4px solid #A8B8A8;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+
+/* Images */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  max-width: 800px;
+  border-radius: 8px;
+  margin: 1.5em 0;
+}
+
+/* Links */
+a {
+  color: #A8B8A8;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: #A8B8A8;
+  color: #F5F1EB;
+  padding: 2em 1.5em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+footer p {
+  margin: 0.5em 0;
+  font-size: 0.95em;
+}
+
+footer a {
+  color: #E8DFD8;
+}
+
+/* Additional semantic elements */
+article {
+  margin-bottom: 1.5em;
+}
+
+/* Lists within sections */
+ul,
+ol {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+  color: #4A4A4A;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Strong and emphasis */
+strong {
+  color: #7A8A7A;
+}
+
+#open-modal {
+  display: block;
+  background-color: #A8B8A8;
+  color: #F5F1EB;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+}
+
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#testing-modal {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 2em;
+  width: 100%;
+  position: relative;
+  border: none;
+}
+
+#testing-modal img {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#close-modal {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #7A8A7A;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+@media (min-width: 700px) {
+  #hamburger-btn {
+    display: none;
+  }
+
+  #nav-menu {
+    display: block !important;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav li {
+    border-bottom: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 3em;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+  nav a {
+    font-size: 1.1em;
+    color: #F5F1EB;
+  }
+
+  nav a:hover {
+    color: #3D3D3D;
+  }
+
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+
+  .welcome {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    text-align: left;
+  }
+
+  .welcome picture {
+    width: 30%;
+    flex-shrink: 0;
+  }
+
+  .welcome-text {
+    flex: 1;
+  }
+
+  .why-content {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .why-content img {
+    width: 30%;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .about-intro-content {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  .about-intro-content img {
+    width: 30%;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .office-content {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .office-content img {
+    width: 30%;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .therapy-content {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  .therapy-content img {
+    width: 30%;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .contact-content {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  .contact-content img {
+    width: 30%;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .contact-text {
+    flex: 1;
+  }
+}

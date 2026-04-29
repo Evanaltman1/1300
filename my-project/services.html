@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Dr. Bonnie Altman</title>
+    <link rel="stylesheet" href="styles/site.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>Dr. Bonnie Altman</h1>
+          <p>Licensed Psychologist</p>
+        </div>
+        <button id="hamburger-btn" aria-label="Open navigation menu">&#9776;</button>
+      </div>
+      <nav id="nav-menu" class="hidden">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="current-page">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="therapy">
+        <h2>Individual Therapy</h2>
+        <div class="therapy-content">
+          <!-- Source: https://unsplash.com/photos/person-holding-on-red-pen-while-writing-on-book-333oj7zFsdg -->
+          <img src="images/journal.jpg" alt="Person writing in a journal">
+          <div class="therapy-text">
+            <!-- Source: (original work) -->
+            <p>At the heart of Dr. Altman's practice is a deep commitment to helping young people feel heard, understood, and supported. Individual therapy sessions provide a safe, confidential space where teenagers can talk openly about what they are going through without fear of judgment.</p>
+            <p>Dr. Altman takes a personalized approach to every client. She draws on evidence-based methods including Cognitive Behavioral Therapy (CBT) and psychodynamic techniques, tailoring her approach to the unique needs, personality, and goals of each young person she works with. Over time, therapy helps clients develop greater self-awareness, healthier coping strategies, and the tools they need to navigate life's challenges with more confidence.</p>
+          </div>
+        </div>
+        <h3>Dr. Altman works with adolescents experiencing:</h3>
+        <ul>
+          <li>Anxiety and stress</li>
+          <li>Depression and low mood</li>
+          <li>Low self-esteem and self-confidence</li>
+          <li>School-related difficulties and academic pressure</li>
+          <li>Social challenges and peer relationships</li>
+          <li>Family transitions and life changes</li>
+          <li>Grief and loss</li>
+        </ul>
+        <p>Sessions are typically 45-50 minutes and are held on a weekly basis. Dr. Altman also offers guidance and support to parents throughout the therapeutic process, helping families understand how best to support their child at home.</p>
+        Source: <cite><a href="https://unsplash.com/photos/person-holding-on-red-pen-while-writing-on-book-333oj7zFsdg">Unsplash</a></cite>
+      </section>
+
+      <section class="testing">
+        <h2>Psychological Testing</h2>
+        <button id="open-modal">Learn More About Psychological Testing</button>
+        <!-- Source: (original work) -->
+        <p>For families who are seeking clarity on their child's challenges, psychological testing can be an invaluable first step. A comprehensive assessment provides an in-depth picture of a child's cognitive, emotional, and behavioral functioning, helping parents and educators better understand what is going on and what kind of support will be most effective.</p>
+        <p>Dr. Altman conducts thorough, multi-step evaluations that typically include clinical interviews with parents and the child, standardized testing, and a review of school records and teacher reports. Following the assessment, Dr. Altman provides a detailed written report and meets with the family to walk through the findings, answer questions, and outline clear, actionable recommendations.</p>
+        <h3>Assessments may include:</h3>
+        <ul>
+          <li>ADHD evaluations</li>
+          <li>Learning disability assessments</li>
+          <li>Emotional and behavioral assessments</li>
+          <li>Anxiety and mood disorder evaluations</li>
+          <li>School accommodation and IEP support</li>
+        </ul>
+        <p>Dr. Altman understands that the testing process can feel overwhelming for both parents and children. She works hard to make the experience as comfortable and stress-free as possible, and is committed to making sure every family leaves with a clear understanding of their child's needs and a concrete plan for moving forward.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Dr. Bonnie Altman, Psy.D. | Licensed Psychologist | Upper West Side, NYC</p>
+      <p>Contact: dr.altman@altmanpsychology.com | (212) 333-3333</p>
+    </footer>
+
+    <div id="modal-overlay" class="hidden">
+      <div id="testing-modal">
+        <button id="close-modal" aria-label="Close modal">&#10005;</button>
+        <h2>Psychological Testing</h2>
+        <div class="modal-content">
+          <!-- Source: https://www.freepik.com/free-photo/side-view-child-drawing-home_7871302.htm -->
+          <img src="images/Modal_Picture_1.jpg" alt="Child taking a psychological test">
+          Source: <cite><a href="https://www.freepik.com/free-photo/side-view-child-drawing-home_7871302.htm">Freepik</a></cite>
+          <p>Psychological testing has been used for over a century to help families and schools better understand how children think, learn, and feel. A comprehensive evaluation can uncover learning disabilities, ADHD, anxiety disorders, and other conditions that might otherwise go unrecognized. With a clear diagnosis, targeted supports can be put in place, leading to better outcomes at home, in the classroom, and beyond.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/site.js"></script>
+  </body>
+</html>
